@@ -1,0 +1,47 @@
+@charset 'utf-8';
+@import '../../../assets/styles/common';
+
+.smart_sideMenu{
+   width: rpx(266);
+   height: 100%;
+   //background: #171d38;
+   position: relative;
+}
+
+.smart_logo{
+   width: 100%;
+   height: rpx(110);
+   background: url('../../../assets/images/public/white-logo.png') no-repeat rpx(68) center #fff;
+   background-size: rpx(160);
+   padding-top: rpx(45);
+}
+
+.smart_nav{
+   //margin-top: rpx(30);
+   padding: 0;
+   width: 100%;
+   position: absolute;
+   top: rpx(110);
+   bottom: rpx(0);
+   overflow-y: auto;
+   background: #171d38;
+   padding-top: rpx(30);
+
+
+   .lis{
+      width: 100%;
+      height: rpx(50);
+      line-height: rpx(50);
+      text-align: center;
+      font-size: rpx(16);
+      color: #fff;
+      cursor: pointer;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover{
+         background: #10152a;
+      }
+   }
+}

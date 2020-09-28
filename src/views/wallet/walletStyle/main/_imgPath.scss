@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/**********images**********/
+/*
+  %xxx{ background: url(../images/public/footerIcon.png) no-repeat left/right top/bottom; }
+  %xxx2{ background: url(../images/public/footerIcon.png) no-repeat 0 0; }
+  */
+
+
+// 功能区域
+%success-icon{ background: url('../../assets/images/public/success-icon.png') no-repeat center;}
+%no-lose-icon{ background: url('../../assets/images/public/no-lose-icon.png') no-repeat center;}
+%no-share-icon{ background: url('../../assets/images/public/no-share-icon.png') no-repeat center;}
+%no-copy-icon{ background: url('../../assets/images/public/no-copy-icon.png') no-repeat center;}

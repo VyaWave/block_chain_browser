@@ -1,0 +1,18 @@
+@charset 'utf-8';
+
+.toast{
+   width: 80% !important;
+   margin-left: -40% !important;
+
+   .words{
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+   }
+
+}
+
+

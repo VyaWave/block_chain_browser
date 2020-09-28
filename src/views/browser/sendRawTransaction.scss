@@ -1,0 +1,148 @@
+@charset 'utf-8';
+@import '../../assets/styles/common';
+
+.smart_sendRawTransAction_container{
+
+    .smart_container_block{
+        padding:0 rpx(35);
+        padding-top: rpx(50);
+    }
+
+    .inputTextBlockBlueFont{
+        color: rgb(20, 159, 219);
+    }
+
+    .web_block{
+        width: 100%;
+        display: block;
+    }
+
+    .web_marginTop10{
+        padding-top: rpx(10)
+    }
+
+    .web_marginTop20{
+        padding-top: rpx(20)
+    }
+
+    .web_marginBottom50{
+        padding-bottom: rpx(50)
+    }
+
+    .radio{
+        width: rpx(20);
+        height: rpx(20);
+        background: url('../../assets/images/common/radio.png') no-repeat center;
+        background-size: rpx(20);
+        cursor: pointer;
+        margin-right: rpx(15);
+    }
+
+    .radio_active{
+        width: rpx(20);
+        height: rpx(20);
+        background: url('../../assets/images/common/radio_active.png') no-repeat center;
+        background-size: rpx(20);
+        cursor: pointer;
+        margin-right: rpx(15);
+    }
+
+    .checkBox{
+        width: rpx(20);
+        height: rpx(20);
+        background: url('../../assets/images/common/checkBox.png') no-repeat center;
+        background-size: rpx(20);
+        cursor: pointer;
+        margin-right: rpx(15);
+        display: inline-block;
+        position: relative;
+        top: rpx(4);
+    }
+
+    .checkBox_active{
+        width: rpx(20);
+        height: rpx(20);
+        background: url('../../assets/images/common/checkBox_active.png') no-repeat center;
+        background-size: rpx(20);
+        cursor: pointer;
+        margin-right: rpx(15);
+        display: inline-block;
+    }
+
+    .mv2{
+        width: 100%;
+        height: rpx(60);
+        display: flex;
+        flex-direction: row;
+
+        label{
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            font-size: rpx(20);
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+        }
+
+        .fileClip{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+    }
+
+    .mv3{
+        width: 100%;
+        display: block;
+        font-size: rpx(20);
+
+        .inputText{
+            width: 100%;
+            height: rpx(40);
+            border-bottom: 2px solid #dedede;
+        }
+
+        .textAreaText{
+            width: 100%;
+            height: rpx(100);
+            border: 2px solid #dedede;
+            resize: none;
+        }
+    }
+
+    .mv4{
+        width: 100%;
+        display: block;
+
+        button{
+             width: auto;
+             padding: 0 rpx(10);
+             height: rpx(60);
+             background-color: rgb(20, 159, 219);
+             color: #fff;
+             border-radius: rpx(6);
+             cursor: pointer;
+             text-align: center;
+             font-size: rpx(20);
+             font-weight: bold;
+
+             &:hover{
+                background-color: rgb(105, 198, 238);
+             }
+        }
+    }
+
+    .fw7{
+        width: 100%;
+    }
+
+    .inputTextBlock{
+        width: 100%;
+    }
+}

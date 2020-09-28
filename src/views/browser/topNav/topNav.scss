@@ -1,0 +1,231 @@
+@charset 'utf-8';
+@import '../../../assets/styles/common';
+
+.smart_container_rightBlock_top{
+    padding: rpx(40);
+    padding-right: rpx(80);
+    height: rpx(110);
+    position: relative;
+    z-index: 2;
+
+    .bottom_line{
+        position: absolute;
+        width: 95%;
+        height: 3px;
+        bottom: rpx(-3);
+        background-color: #f3f3f3;
+        left: 2.5%;
+    }
+}
+
+.smart_container_rightBlock_topDom{
+    padding: rpx(40);
+    @extend %clearfix;
+}
+
+.smart_searchBlock{
+    width: rpx(535);
+    height: rpx(60);
+    border: 1px solid #d4d4d4;
+    border-radius: rpx(100);
+    float: left;
+}
+
+.smart_searchBlock_border{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    
+    
+
+    .smart_searchBlock_SelectPlugin{
+        width: rpx(120);
+        border: 1px solid #dfdfdf;
+        background: #fff;
+        position: absolute;
+        top: rpx(58);
+        left: 0;
+        font-size: rpx(14);
+        text-align: center;
+        border-radius:rpx(4);
+        display: none;
+
+        .li{
+            padding:rpx(5) rpx(10);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            cursor: pointer;
+            line-height: rpx(30);
+
+            &:hover{
+                background: #f5f5f5;
+                font-weight: bold;
+            }
+        }
+        
+    }
+
+    .smart_searchBlock_allSelect{
+        width: rpx(120);
+        height: rpx(58);
+        line-height: rpx(58);
+        float: left;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        font-size: rpx(18);
+
+        span{
+            font-weight: bold;
+        }
+
+        .line{
+            width: 1px;
+            height: rpx(40);
+            background: #dedede;
+            position: absolute;
+            right:0px;
+            top: rpx(10);
+        }
+
+        &:hover{
+
+            .smart_searchBlock_SelectPlugin{
+                display: block;
+            }
+        }
+    }
+
+    .smart_searchBlock_rightText{
+        width: calc(100% - #{rpx(130)});
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: row;
+
+        input{
+            width: 87%;
+            height: rpx(40);
+            line-height: rpx(40);
+            margin-left: rpx(10);
+            font-size: rpx(16);
+            color: #333;
+            margin-top: rpx(9);
+            @include placeHolderColor(#999);
+        }
+
+        .searchButton{
+            width: rpx(40);
+            height: rpx(58);
+            background: url('../../../assets/images/public/icon_search.png') no-repeat  center;
+            background-size: 60%;
+            cursor: pointer;
+        }
+    }
+}
+
+.smart_rightBlock_block{
+    width: 100%;
+    font-size: 0;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //position: absolute;
+    //right: rpx(20);
+
+   
+
+    .lis{
+        display: inline-block;
+        margin-left: rpx(40);
+        font-size: rpx(22);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        cursor: pointer;
+        color: #333;
+
+        a{
+            color: #333;
+
+            &:hover{
+                color: #2f54f9;
+            }
+        }
+
+    }
+
+    .picker-new{
+        position: relative;
+        cursor: pointer;
+        margin-right: rpx(40);
+        overflow: inherit;
+
+        .picker-block{
+            display: none;
+        }
+    
+        .arrow-down{
+            font-size: 22px;
+            vertical-align: middle;
+        }
+    
+        &:after{
+            content:'';
+            display: inline-block;
+            width: 19px;
+            height: 9px;
+            vertical-align: middle;
+            background: url('../../../assets/images/public/downArrow_2.png') no-repeat;
+            background-size: cover;
+            margin-left: 10px;
+            margin-top: 3px;
+            transition: all 0.3s ease-in;
+            position: absolute;
+            top: rpx(10);
+        }
+    
+        &:hover{
+    
+            .picker-block{
+                display: block;
+                width: 120%;
+                position: absolute;
+                border: 1px solid #dedede;
+                background-color: white;
+                left: 0%;
+                top: 0px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                font-size: 18px;
+                text-align: center;
+                z-index: 1;
+                cursor: pointer;
+                position: relative;
+            }
+    
+            .li{
+                width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                padding: 10px 0;
+                font-size: 18px;
+                color: #333333;
+    
+                &:hover{
+                    background-color: #f5f5f5;
+                }
+            }
+    
+    
+            &:after{
+                transition: all 0.3s ease-in;
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+   
+}

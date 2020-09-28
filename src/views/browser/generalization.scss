@@ -1,0 +1,321 @@
+@charset 'utf-8';
+@import '../../assets/styles/common';
+
+.smart_hash_list{
+    width: auto;
+    padding: 0 rpx(40);
+    padding-top: rpx(40);
+    @extend %clearfix;
+}
+
+.smart_hash_list_lis{
+    width: 30%;
+    height: rpx(95);
+    float: left;
+    margin-right: 3.3%;
+    margin-bottom: rpx(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .smart_hash_list_lisLeft{
+        width: 80%;
+        height: auto;
+        color: #fff;
+
+        .hash{
+            width: 100%;
+            height: rpx(35);
+            font-size: rpx(16);
+            font-weight: bold;
+        }
+
+        .ks{
+            width: 90%;
+            font-size: rpx(14);
+            word-wrap: break-word;
+            word-break:break-all;
+        }
+        .bf{
+            width: 100%;
+            color: #ff5252;
+
+            .point{
+                width: rpx(10);
+                height: rpx(10);
+                border-radius: rpx(10);
+                background-color: #ff5252;
+                display: inline-block;
+                margin-right: rpx(5);
+            }
+        }
+    }
+
+
+
+    .smart_hash_list_lisRight{
+        width: calc(100% - #{rpx(130)});
+        height: rpx(69);
+        float: left;
+        margin-top: rpx(15);
+        text-align: center;
+
+        img{
+            display: inline-block;
+            width: auto;
+            height: 100%;
+        }
+    }
+}
+
+.smart_nav_bg1{
+    background: url('../../assets/images/public/nav1.png') no-repeat right center;
+}
+
+.smart_nav_bg2{
+    background: url('../../assets/images/public/nav2.png') no-repeat right center;
+}
+
+.smart_nav_bg3{
+    background: url('../../assets/images/public/nav3.png') no-repeat right center;
+}
+
+.smart_container_qkMessageBlock{
+    width: 100%;
+    @extend %clearfix;
+
+    .left{
+        width: 100%;
+        // float: left;
+        padding-bottom: rpx(70);
+    }
+
+    .right{
+        width: 36%;
+        // float: right;
+        padding-left: rpx(25);
+        padding-right: rpx(40);
+        box-sizing: border-box;
+
+        .echart{
+            width: 100%;
+            height: rpx(120);
+            margin-top: rpx(20);
+            text-align: center;
+
+            img{
+                display: inline-block;
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        .list{
+            width: 100%;
+
+            .li{
+                width: 100%;
+                @extend %clearfix;
+                padding: rpx(10) 0;
+
+                .radio{
+                    width: rpx(14);
+                    height: rpx(14);
+                    border-radius: rpx(14);
+                    border: rpx(3) solid #5252ff;
+                    float: left;
+                    position: relative;
+                    top: rpx(3);
+                    margin-right:rpx(5);
+                  
+                }
+
+                .text{
+                    width: calc(100% - #{rpx(19)} - 30%);
+                    white-space: nowrap;
+                    text-align: left;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    float: left;
+                    font-size: rpx(14);
+                    color: #333333;
+                }
+
+                .number{
+                    width: 29%;
+                    white-space: nowrap;
+                    text-align: right;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    float: left;
+                    font-size: rpx(14);
+                    color: #333333;
+                }
+            }
+        }
+    }
+
+    .smart_qkMessageBlock_left{
+        width: 100%;
+        font-size: rpx(26);
+        font-weight: bold;
+        color: #666;
+    }
+}
+
+.smart_container_tableList{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto; 
+    margin-top: rpx(20);
+    border: 1px solid #f3f3f3;
+    border-radius: rpx(20);
+
+
+    table{
+        width: rpx(560);
+        min-width: 100%;
+       
+
+        th{
+            padding: rpx(10) 0;
+            background: #f3f3f3;
+            font-weight: bold;
+            font-size: rpx(19);
+            font-weight: bold;
+        }
+
+        td{
+            height: rpx(70);
+            vertical-align: middle;
+            line-height: rpx(70);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            font-size: rpx(16);
+
+            .hash{
+                margin: 0 auto;
+                width: 90%;
+                line-height: rpx(18);
+                text-align: left;
+                white-space: normal;
+                word-wrap: break-word;
+                word-break: break-all;
+            }
+        }
+
+        tr{
+            
+        }
+    }
+}
+
+
+.smart_container_qkMessageBlock .smart_qkMessageBlock_left_block{
+   width: auto;
+   float: left;
+   padding-top: rpx(13);
+}
+
+.smart_qkMessageBlock_right_block{
+   float: right;
+}
+
+.smart_block_clearFix{
+    width: 100%;
+    @extend %clearfix;
+    padding-bottom: rpx(20);
+}
+
+.smart_container_jy_table_2{
+    margin-bottom: rpx(30);
+}
+
+.smart_container_dz_table{
+    width: 100%;
+
+    th{
+        white-space: nowrap;
+    }
+
+    table .td_li{
+        word-wrap:break-word; 
+        word-break:normal; 
+        word-break:break-all;
+        line-height: rpx(22);
+        white-space: normal;
+        text-align: left;
+    }
+
+    table td{
+        height: auto !important;
+        line-height: rpx(22) !important;
+        padding: rpx(20) 0;
+    }
+}
+
+
+.smart_browser{
+
+    .smart_tableForAdress{
+        padding: 0;
+    }
+
+    .smart_tableForAdress table{
+        min-width: 100%;
+        padding: 0 !important;
+
+        th{
+            padding: 0;
+        }
+
+        td{
+           line-height: rpx(22) !important;
+        }
+    }
+    
+    .smart_tableForAdress .border {
+        border: 1px solid #f3f3f3;
+        border-radius: rpx(40);
+        overflow: hidden;
+    }
+    
+    .smart_tableForAdress table td:first-child .header img {
+        width: rpx(35);
+        height: rpx(35);
+        border-radius: rpx(35);
+        display: block;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .smart_tableForAdress table td:first-child .lis{
+        cursor: default;
+    }
+
+    .smart_tableForAdress table td:first-child .content {
+        width: 90%;
+        text-align: left;
+        display: inline-block;
+        padding: 0 10px;
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-all;
+        line-height: 22px;
+    }
+
+    .smart_tableForAdress table th {
+        white-space: nowrap;
+    }
+
+    .margin-left-25{
+        margin-left: 25px;
+    }
+
+    .textLeft{
+        text-align: left !important;
+    }
+}
+

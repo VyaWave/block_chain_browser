@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+//网站色调
+$main-color: #d65050;
+$main-color-deep:#c40d0d;
+
+/*引入重置样式*/
+@include init-style();
+
+/*初始化适合此项目的样式*/
+body {
+  font-family: Helvetica, sans-serif,'PingFangSC-Light';
+  background-color: #eeeeee;
+  font-size: pxChangeRem(24);
+  color: #333333;
+  overflow: hidden;
+  height: 100%;
+}
+input, textarea, select, button{
+  font: 12px Helvetica, sans-serif,'PingFangSC-Light';
+}
+
+/*****主体main-end*****/

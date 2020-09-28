@@ -1,0 +1,14 @@
+ // 错误提示
+ .signUp_error{
+    font-size:rpx(14);
+    color:rgba(255,59,48,1);
+    padding-left: rpx(130);
+    margin-top: rpx(8);
+}
+// 验证成功提示
+.signUp_success{
+    color:#666;
+    .checkmark_circle_icon{
+        color:rgb(92, 190, 113);
+    }
+}

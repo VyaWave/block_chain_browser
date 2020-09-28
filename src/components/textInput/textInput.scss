@@ -1,0 +1,60 @@
+@charset 'utf-8';
+@import '../../assets/styles/common';
+
+.camchat_inputBlock{
+    width: calc(100% - rpx(30));
+    height: rpx(39);  
+    position: relative;
+    padding-right: rpx(30);
+    border-bottom: 1px solid #e6e6e6;
+    transition: border 0.6s ease-in;
+   
+
+    input{
+        width: 100%;
+        height: rpx(38);
+        font-size: rpx(14);
+        text-indent: rpx(20);
+
+        @include placeHolderColor(#999);
+    }
+    
+    .closeBtn{
+        width: rpx(30);
+        height: rpx(40);
+        background: url('../../assets/images/common/closeBtnInput.png') no-repeat center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .eyeBtn{
+        width: rpx(30);
+        height: rpx(40);
+        background: url('../../assets/images/common/eyeBtn.png') no-repeat center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        transition: all 0.4s ease-in;
+    }
+
+    .eyeBtn_active{
+        background: url('../../assets/images/common/eyeBtn_active.png') no-repeat center rpx(14.5);
+    }
+}
+
+.inputBottomLine{
+    border-bottom: 1px solid #3bc3ff;
+}
+
+.inputErrorTips{
+    font-size: rpx(14);
+    padding-top: rpx(8);
+    color: #ff3b30;
+    position: absolute;
+    top: rpx(35);
+    left: rpx(0);
+    z-index: 2;
+}
