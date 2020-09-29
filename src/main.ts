@@ -32,7 +32,12 @@ if(process.env.NODE_ENV === 'development'){
 
       // 都没就默认正式环境接口地址
       //BaseConfig.baseUrl.dev = 'https://testnet2.smartx.one';
-      BaseConfig.baseUrl.dev = "http://192.168.1.101:5000";
+
+      // 内网
+      // BaseConfig.baseUrl.dev = "http://192.168.1.101:5000";
+
+      // 外网
+      BaseConfig.baseUrl.dev = "http://152.32.189.195:5000";
 
       new Vue({
             i18n,
@@ -47,16 +52,16 @@ if(process.env.NODE_ENV === 'development'){
       axios.get('/url.json?v='+ Math.random()).then(response => {
 
             if(response.status == 200){
-      
-                  BaseConfig.baseUrl.pro = response.data.url;    
-      
+
+                  BaseConfig.baseUrl.pro = response.data.url;
+
                   new Vue({
                         i18n,
                         router,
                         store,
                         render: (h) => h(App),
                   }).$mount('#app');
-            }    
+            }
       })
 
 }

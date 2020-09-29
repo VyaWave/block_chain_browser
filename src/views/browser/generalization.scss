@@ -127,7 +127,7 @@
                     position: relative;
                     top: rpx(3);
                     margin-right:rpx(5);
-                  
+
                 }
 
                 .text{
@@ -166,7 +166,7 @@
 .smart_container_tableList{
     width: 100%;
     overflow: hidden;
-    overflow-x: auto; 
+    overflow-x: auto;
     margin-top: rpx(20);
     border: 1px solid #f3f3f3;
     border-radius: rpx(20);
@@ -175,7 +175,7 @@
     table{
         width: rpx(560);
         min-width: 100%;
-       
+
 
         th{
             padding: rpx(10) 0;
@@ -207,7 +207,7 @@
         }
 
         tr{
-            
+
         }
     }
 }
@@ -241,8 +241,8 @@
     }
 
     table .td_li{
-        word-wrap:break-word; 
-        word-break:normal; 
+        word-wrap:break-word;
+        word-break:normal;
         word-break:break-all;
         line-height: rpx(22);
         white-space: normal;
@@ -275,13 +275,13 @@
            line-height: rpx(22) !important;
         }
     }
-    
+
     .smart_tableForAdress .border {
         border: 1px solid #f3f3f3;
         border-radius: rpx(40);
         overflow: hidden;
     }
-    
+
     .smart_tableForAdress table td:first-child .header img {
         width: rpx(35);
         height: rpx(35);
@@ -317,5 +317,74 @@
     .textLeft{
         text-align: left !important;
     }
+}
+
+.smart_browser_footer {
+    display: none;
+}
+
+
+@media only screen and (max-width:750px){
+
+
+    // 右侧布局
+    .smart_container_rightBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    // Footer
+    .smart_browser_footer {
+        z-index: 1;
+        display: block;
+        background: #171d38;
+        color: #888888;
+        font-size: 20px;
+        font-family: PingFang SC;
+        font-weight: bold;
+        color: #888888;
+        text-align: center;
+        line-height: 40px;
+        height: 40px;
+    }
+
+    .smart_container_rightBlock_title {
+        display: none;
+
+    }
+
+    .smart_hash_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+        .smart_nav_bg1 {
+            width: 100%;
+            background: url('../../assets/images/public/nav1.png') no-repeat center center;
+            background-size: cover;
+            margin: 0 0 20px;
+        }
+        .smart_nav_bg2 {
+            width: 100%;
+            background: url('../../assets/images/public/nav2.png') no-repeat center center;
+            background-size: cover;
+            margin: 0 0 20px;
+        }
+
+        .smart_nav_bg3 {
+            width: 100%;
+            background: url('../../assets/images/public/nav3.png') no-repeat center center;
+            background-size: cover;
+            margin: 0 0 20px;
+        }
+    }
+
+    .smart_container_qkMessageBlock {
+        padding: 15px !important;
+    }
+
 }
 

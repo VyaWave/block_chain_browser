@@ -1,10 +1,6 @@
 <template>
     <div class="smart_container">
-        
-        <SideMenu class="smart_container_left"/>
-
         <router-view  class="smart_container_right"/>
-
     </div>
 </template>
 

@@ -7,16 +7,9 @@
     @extend %clearfix;
 }
 
-.smart_container_left{
-    float: left;
-}
-
 .smart_container_right{
-    width: calc(100% - #{rpx(266)});
+    width: 100%;
     height: 100%;
-    //overflow: auto;
-    float: right;
-    position: relative;
 }
 
 .smart_container_rightBlock_scroll{
@@ -31,4 +24,21 @@
 .smart_container_rightBlock{
     height: 100%;
     background-color: #fff;
+}
+
+// 更新 browser 布局
+@media only screen and (max-width:750px){
+    .smart_container_left {
+        display: none;
+
+    }
+
+    .smart_container_right {
+        float: none;
+        width: 100%;
+    }
+
+    .smart_container_rightBlock_scroll {
+        top: 1.4666666667rem;
+    }
 }
