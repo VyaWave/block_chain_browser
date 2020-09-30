@@ -10,7 +10,11 @@ import router from '@/router/router';
 import store from '@/store/index';
 import App from './app.vue';
 
-import axios    from 'axios';
+import ElementUI from 'element-ui';
+
+Vue.use(ElementUI);
+
+import axios  from 'axios';
 
 /** 导入基础配置 */
 import BaseConfig from '@/config/base.config';

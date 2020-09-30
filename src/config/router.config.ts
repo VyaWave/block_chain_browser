@@ -7,15 +7,15 @@
 
    /**
      *  isNoRequiredLogin:true
-     * 
+     *
      * 设置不需要登录的页面
-     * 
-     * 登录模块：    
-     * 
+     *
+     * 登录模块：
+     *
      * 修改密码模块：
-     * 
-     * 注册账号模块： 
-     * 
+     *
+     * 注册账号模块：
+     *
     */
 
 export default [
@@ -60,7 +60,19 @@ export default [
                },
                isNoRequiredLogin:true,
             }]
-         }, 
+         },
+
+         /*************************** 浏览器新首页 *****************************/
+
+         {
+            path: '/browser/index',
+            name: 'new-browser',
+            component: require('@/views/browser/NewBrowser/index.vue').default,
+            meta: {
+               title: '区块浏览器首页',
+            },
+            isNoRequiredLogin:true,
+         },
 
          /*************************** 浏览器模块 *****************************/
          {
@@ -98,7 +110,7 @@ export default [
                      title: '交易详细信息',
                   },
                   isNoRequiredLogin:true,
-            }, 
+            },
             {
                   path: '/browser/addressInformation',
                   name: 'addressInformation',
@@ -107,7 +119,7 @@ export default [
                      title: '地址信息',
                   },
                   isNoRequiredLogin:true,
-            },  
+            },
             {
                path: '/browser/mcMainBlockInformation',
                name: 'mcMainBlockInformation',

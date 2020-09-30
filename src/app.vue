@@ -20,7 +20,7 @@
    export default class App extends Vue {
 
         private mounted():void {
-          
+
             /** 把所有函数名字打入到Storage中 */
             Utils['setSessionStorage']('gettersName', JSON.stringify(Utils['exportFileFunName'](_GettersNameArray)));
 
